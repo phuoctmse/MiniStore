@@ -1,0 +1,180 @@
+body{
+background:#eee;    
+}
+
+.card-box {
+    position: relative;
+    color: #fff;
+    padding: 20px 10px 40px;
+    margin: 20px 0px;
+}
+.card-box:hover {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+.card-box:hover .icon i {
+    font-size: 100px;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+.card-box .inner {
+    padding: 5px 10px 0 10px;
+}
+.card-box h3 {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    white-space: nowrap;
+    padding: 0;
+    text-align: left;
+}
+.card-box p {
+    font-size: 15px;
+}
+.card-box .icon {
+    position: absolute;
+    top: auto;
+    bottom: 5px;
+    right: 5px;
+    z-index: 0;
+    font-size: 72px;
+    color: rgba(0, 0, 0, 0.15);
+}
+.card-box .card-box-footer {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    padding: 3px 0;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-decoration: none;
+}
+.card-box:hover .card-box-footer {
+    background: rgba(0, 0, 0, 0.3);
+}
+.bg-blue {
+    background-color: #00c0ef !important;
+}
+.bg-green {
+    background-color: #00a65a !important;
+}
+.bg-orange {
+    background-color: #f39c12 !important;
+}
+.bg-red {
+    background-color: #d9534f !important;
+}
+
+.table-responsive {
+    margin: 30px 0;
+    width: 100%;
+    overflow-x: auto;
+    /* Thêm thuộc tính này để cuộn nếu cần */
+    overflow-y: auto;
+}
+.table-wrapper {
+    /* Kích thước tối thiểu nên là 100%, nhưng tôi sẽ thêm max-width để hạn chế chiều rộng */
+    min-width: 100%;
+    max-width: 100%;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.table-title {
+    color: #fff;
+    background: #40b2cd;		
+    padding: 16px 25px;
+    margin: -20px -25px 10px;
+    border-radius: 3px 3px 0 0;
+}
+.table-title h2 {
+    margin: 5px 0 0;
+    font-size: 24px;
+}
+.search-box {
+    position: relative;
+    float: right;
+}
+.search-box .input-group {
+    min-width: 300px;
+    position: absolute;
+    right: 0;
+}
+.search-box .input-group-addon, .search-box input {
+    border-color: #ddd;
+    border-radius: 0;
+}	
+.search-box input {
+    height: 34px;
+    padding-right: 35px;
+    background: #f4fcfd;
+    border: none;
+    border-radius: 2px !important;
+}
+.search-box input:focus {
+    background: #fff;
+}
+.search-box input::placeholder {
+    font-style: italic;
+}
+.search-box .input-group-addon {
+    min-width: 35px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    padding: 6px 0;
+}
+.search-box i {
+    color: #a0a5b1;
+    font-size: 19px;
+    position: relative;
+    top: 2px;
+}
+table.table {
+    /* Sử dụng table-layout: fixed để áp đặt chiều rộng cho cột */
+    table-layout: fixed;
+    margin-top: 15px;
+    width: 100%;
+}
+table.table th, table.table td {
+    /* Sử dụng overflow: hidden để ngăn nội dung rơi ra ngoài */
+    overflow: hidden;
+    /* Sử dụng text-overflow: ellipsis để thêm dấu "..." nếu văn bản vượt quá ô */
+    text-overflow: ellipsis;
+    /* Đảm bảo rằng văn bản không bị ngắt quãng */
+    white-space: nowrap;
+}
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+table.table th:first-child {
+    width: 60px;
+}
+table.table th:last-child {
+    width: 120px;
+}
+table.table td a {
+    color: #a0a5b1;
+    display: inline-block;
+    margin: 0 5px;
+}
+table.table td a.view {
+    color: #03A9F4;
+}
+table.table td a.edit {
+    color: #FFC107;
+}
+table.table td a.delete {
+    color: #E34724;
+}
+table.table td i {
+    font-size: 19px;
+} 
+
